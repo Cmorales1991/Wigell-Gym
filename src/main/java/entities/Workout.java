@@ -3,7 +3,7 @@ package entities;
 import jakarta.persistence.*;
 
 @Entity
-public class WorkoutEntity {
+public class Workout {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,12 +28,12 @@ public class WorkoutEntity {
     private double priceEURO;
 
     @ManyToOne
-    private InstructorEntity instructor;
+    private Instructor instructor;
 
-    public WorkoutEntity() {
+    public Workout() {
     }
 
-    public WorkoutEntity(Long id, String workoutName, String type, double duration, double maxParticipants, double priceSEK, double priceEURO, InstructorEntity instructor) {
+    public Workout(Long id, String workoutName, String type, double duration, double maxParticipants, double priceSEK, double priceEURO, Instructor instructor) {
         this.id = id;
         this.workoutName = workoutName;
         this.type = type;
@@ -100,11 +100,11 @@ public class WorkoutEntity {
         this.priceEURO = priceEURO;
     }
 
-    public InstructorEntity getInstructor() {
+    public Instructor getInstructor() {
         return instructor;
     }
 
-    public void setInstructor(InstructorEntity instructor) {
+    public void setInstructor(Instructor instructor) {
         this.instructor = instructor;
     }
 }

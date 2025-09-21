@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-public class BookingEntity {
+public class Booking {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,15 +24,15 @@ public class BookingEntity {
     private double totalPriceEURO;
 
     @ManyToOne
-    private CustomerEntity customer;
+    private Customer customer;
 
     @ManyToOne
-    private WorkoutEntity workOut;
+    private Workout workOut;
 
-    public BookingEntity() {
+    public Booking() {
     }
 
-    public BookingEntity(Long id, LocalDate bookingDate, boolean cancelled, double totalPriceSEK, double totalPriceEURO, CustomerEntity customer, WorkoutEntity workOut) {
+    public Booking(Long id, LocalDate bookingDate, boolean cancelled, double totalPriceSEK, double totalPriceEURO, Customer customer, Workout workOut) {
         this.id = id;
         this.bookingDate = bookingDate;
         this.cancelled = false;
@@ -82,19 +82,19 @@ public class BookingEntity {
         this.totalPriceEURO = totalPriceEURO;
     }
 
-    public CustomerEntity getCustomer() {
+    public Customer getCustomer() {
         return customer;
     }
 
-    public void setCustomer(CustomerEntity customer) {
+    public void setCustomer(Customer customer) {
         this.customer = customer;
     }
 
-    public WorkoutEntity getWorkOut() {
+    public Workout getWorkOut() {
         return workOut;
     }
 
-    public void setWorkOut(WorkoutEntity workOut) {
+    public void setWorkOut(Workout workOut) {
         this.workOut = workOut;
     }
 }

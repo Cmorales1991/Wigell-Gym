@@ -3,7 +3,7 @@ package entities;
 import jakarta.persistence.*;
 
 @Entity
-public class CustomerEntity {
+public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,10 +18,10 @@ public class CustomerEntity {
     @Column(unique = true, nullable = false)
     private String email;
 
-    public CustomerEntity() {
+    public Customer() {
     }
 
-    public CustomerEntity(Long id, String firstName, String lastName, String email) {
+    public Customer(Long id, String firstName, String lastName, String email) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;

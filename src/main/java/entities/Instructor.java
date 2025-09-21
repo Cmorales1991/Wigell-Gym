@@ -3,7 +3,7 @@ package entities;
 import jakarta.persistence.*;
 
 @Entity
-public class InstructorEntity {
+public class Instructor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,10 +15,10 @@ public class InstructorEntity {
     @Column(nullable = false)
     private String speciality;
 
-    public InstructorEntity() {
+    public Instructor() {
     }
 
-    public InstructorEntity(Long id, String name, String speciality) {
+    public Instructor(Long id, String name, String speciality) {
         this.id = id;
         this.name = name;
         this.speciality = speciality;
