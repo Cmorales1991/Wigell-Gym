@@ -2,7 +2,6 @@ package org.example.wigellgym.controllers;
 
 import org.example.wigellgym.dto.GymBookingDTO;
 import org.example.wigellgym.dto.GymWorkoutDTO;
-import org.example.wigellgym.entities.GymBooking;
 import org.example.wigellgym.entities.GymCustomer;
 import org.example.wigellgym.entities.GymInstructor;
 import org.example.wigellgym.entities.GymWorkout;
@@ -79,16 +78,6 @@ public class AdminController {
                 .toList();
         return ResponseEntity.ok(dtos);
     }
-    //en endpoint för admin om kund vill göra ändring i sin bokning.
-//    @PutMapping("/bookings/{id}")
-//    public ResponseEntity<?> updateBooking(@PathVariable Long id, @RequestBody GymBooking gymBooking) {
-//        try {
-//            GymBooking updated = gymBookingService.updateBooking(id, gymBooking);
-//            return ResponseEntity.ok(updated);
-//        } catch (GymResourceNotFoundException | InvalidGymBookingException ex) {
-//            return ResponseEntity.badRequest().body(ex.getMessage());
-//        }
-//    }
 
     //work out endpoints
     @PostMapping("/addworkout")

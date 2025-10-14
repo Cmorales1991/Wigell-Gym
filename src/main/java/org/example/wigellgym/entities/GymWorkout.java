@@ -40,14 +40,14 @@ public class GymWorkout {
 
     public GymWorkout() {}
 
-    public GymWorkout(Long id, String workoutName, String type, int duration, int maxParticipants, double priceSEK/*, double priceEURO*/, GymInstructor instructor) {
+    public GymWorkout(Long id, String workoutName, String type, int duration, int maxParticipants, double priceSEK, double priceEURO, GymInstructor instructor) {
         this.id = id;
         this.workoutName = workoutName;
         this.type = type;
         this.duration = duration;
         this.maxParticipants = maxParticipants;
         this.priceSEK = priceSEK;
-//        this.priceEURO = priceEURO;
+        this.priceEURO = priceEURO;
         this.instructor = instructor;
     }
 

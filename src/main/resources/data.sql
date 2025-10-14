@@ -1,7 +1,7 @@
-INSERT INTO customer (first_name, last_name, user_name) VALUES('Joey', 'Tribbiani', 'joey');
-INSERT INTO customer (first_name, last_name, user_name) VALUES('Ross', 'Geller','ross');
-INSERT INTO customer (first_name, last_name, user_name) VALUES('Rachel', 'Green','rachel');
-INSERT INTO customer (first_name, last_name, user_name) VALUES('Chandler', 'Bing','chandler');
+INSERT INTO gymcustomer (first_name, last_name, user_name) VALUES('Joey', 'Tribbiani', 'joey');
+INSERT INTO gymcustomer (first_name, last_name, user_name) VALUES('Ross', 'Geller','ross');
+INSERT INTO gymcustomer (first_name, last_name, user_name) VALUES('Rachel', 'Green','rachel');
+INSERT INTO gymcustomer (first_name, last_name, user_name) VALUES('Chandler', 'Bing','chandler');
 
 INSERT INTO instructor (name, speciality) VALUES ('Christoffer', 'Yoga');
 INSERT INTO instructor (name, speciality) VALUES ('Kevin', 'Lifting');

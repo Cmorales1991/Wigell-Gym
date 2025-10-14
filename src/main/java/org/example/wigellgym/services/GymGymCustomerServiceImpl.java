@@ -87,34 +87,6 @@ public class GymGymCustomerServiceImpl implements GymCustomerService {
     return updated;
 }
 
-//    @Override
-//    public GymCustomer updateCustomerForUser(Long id, GymCustomer gymCustomer, String username) {
-//        GymCustomer existingGymCustomer = gymCustomerRepository.findById(id)
-//                .orElseThrow(() -> new GymResourceNotFoundException("Customer", "id", id));
-//
-//        if(!existingGymCustomer.getFirstName().equals(username)) {
-//            throw new InvalidGymCustomerException("You can only update your own profile!");
-//        }
-//
-//
-//        if (gymCustomer.getFirstName() != null && !gymCustomer.getFirstName().isBlank()) {
-//            existingGymCustomer.setFirstName(gymCustomer.getFirstName());
-//        }
-//        if (gymCustomer.getLastName() != null && !gymCustomer.getLastName().isBlank()) {
-//            existingGymCustomer.setLastName(gymCustomer.getLastName());
-//        }
-//        if (gymCustomer.getEmail() != null && !gymCustomer.getEmail().isBlank()) {
-//            //kontroll ifall email redan används av någon
-//            gymCustomerRepository.findByEmail(gymCustomer.getEmail()).ifPresent(c -> {
-//                if (!c.getId().equals(id)) {
-//                    throw new InvalidGymCustomerException("Email already exists:" + gymCustomer.getEmail());
-//                }
-//            });
-//            existingGymCustomer.setEmail(gymCustomer.getEmail());
-//        }
-//        return gymCustomerRepository.save(existingGymCustomer);
-//    }
-
     @Override
     public void deleteCustomer(Long id) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
