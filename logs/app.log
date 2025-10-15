@@ -22813,3 +22813,8 @@ Caused by: java.sql.SQLSyntaxErrorException: Table 'wigelldb.workout' doesn't ex
 2025-10-15 10:17:01,929 [main] INFO  org.example.wigellgym.services.GymWorkoutServiceImpl - User 'joey' retrieved all workouts, total count: 2
 2025-10-15 10:17:01,965 [main] INFO  org.example.wigellgym.services.GymWorkoutServiceImpl - User 'joey' is attempting to add new workout: 
 2025-10-15 10:17:01,967 [main] WARN  org.example.wigellgym.services.GymWorkoutServiceImpl - User 'joey' has failed to add new workout : name is empty 
+2025-10-15 10:17:29,818 [SpringApplicationShutdownHook] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15 10:17:29,843 [tomcat-shutdown] INFO  org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-15 10:17:29,856 [SpringApplicationShutdownHook] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15 10:17:30,697 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-15 10:17:30,708 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
